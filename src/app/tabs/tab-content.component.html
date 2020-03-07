@@ -1,0 +1,8 @@
+<style>
+  .content-wrapper {
+    display: inline-block;
+  }
+</style>
+<div *ngIf="tabsSvc.activeIndex === index" class="content-wrapper">
+  <ng-content></ng-content>
+</div>

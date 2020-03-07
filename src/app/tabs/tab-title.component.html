@@ -1,0 +1,16 @@
+<style>
+  .tabs__title {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .tabs__title--active {
+    border-bottom: 2px solid #ff2222;
+  }
+</style>
+<div
+  class="tabs__title"
+  [class.tabs__title--active]="tabsSvc.activeIndex === index"
+>
+  <ng-content></ng-content>
+</div>
